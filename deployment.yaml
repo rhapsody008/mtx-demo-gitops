@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: zy-workload-app
   namespace: mtx-project-demo
+  labels:
+    app: zy-workload-app
 spec:
   replicas: 1
   selector:
@@ -15,9 +17,10 @@ spec:
     spec:
       containers:
         - name: app
-          image: your-registry/zy-workload-app:latest
+          image: rhapsody008/hello-app:latest
           ports:
-            - containerPort: 8080
+            - name: http
+              containerPort: 8080
           envFrom:
             - configMapRef:
                 name: cluster-config

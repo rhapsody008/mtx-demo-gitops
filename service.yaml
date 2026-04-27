@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: zy-workload-app
+  namespace: mtx-project-demo
+  labels:
+    app: zy-workload-app
+spec:
+  type: ClusterIP
+  selector:
+    app: zy-workload-app
+  ports:
+    - name: http
+      port: 8080
+      targetPort: http
+      protocol: TCP
