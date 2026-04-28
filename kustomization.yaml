@@ -12,7 +12,7 @@ resources:
 - ingress.yaml
 
 
-images:
-- name: rhapsody008/hello-app
-  newName: rhapsody008/hello-app
-  newTag: sha-fabb26c
+# images:
+# - name: rhapsody008/hello-app
+#   newName: rhapsody008/hello-app
+#   newTag: sha-fabb26c

@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: rhapsody008/hello-app:latest
+          image: mintplexlabs/anythingllm
           ports:
             - name: http
               containerPort: 8080
