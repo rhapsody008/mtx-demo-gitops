@@ -10,6 +10,8 @@ resources:
 - deployment.yaml
 - service.yaml
 - ingress.yaml
+
+
 images:
 - name: rhapsody008/hello-app
   newName: rhapsody008/hello-app
