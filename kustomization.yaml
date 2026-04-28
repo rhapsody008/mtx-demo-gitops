@@ -15,4 +15,4 @@ resources:
 images:
 - name: rhapsody008/hello-app
   newName: rhapsody008/hello-app
-  newTag: sha-36de0d3
+  newTag: sha-c063081
