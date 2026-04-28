@@ -19,8 +19,10 @@ spec:
         - name: app
           image: mintplexlabs/anythingllm
           ports:
-            - name: http
+            - name: openwebui
               containerPort: 8080
+            - name: anythingllm
+              containerPort: 3001
           envFrom:
             - configMapRef:
                 name: cluster-config
