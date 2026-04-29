@@ -12,7 +12,7 @@ resources:
 - ingress.yaml
 
 
-images:
-- name: mintplexlabs/anythingllm
-  newName: ghcr.io/open-webui/open-webui
-  newTag: main
+# images:
+# - name: mintplexlabs/anythingllm
+#   newName: ghcr.io/open-webui/open-webui
+#   newTag: main
