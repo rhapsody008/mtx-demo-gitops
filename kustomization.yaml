@@ -10,9 +10,7 @@ resources:
 - deployment.yaml
 - service.yaml
 - ingress.yaml
-
-
-# images:
-# - name: mintplexlabs/anythingllm
-#   newName: ghcr.io/open-webui/open-webui
-#   newTag: main
+images:
+- name: rhapsody008/hello-app
+  newName: rhapsody008/hello-app
+  newTag: sha-01e59db
