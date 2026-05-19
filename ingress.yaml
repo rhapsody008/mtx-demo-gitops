@@ -7,6 +7,7 @@ metadata:
     traefik.ingress.kubernetes.io/router.tls: "false"
 spec:
   ingressClassName: kommander-traefik
+  host: openwebui.nkp.yolocal.cloud
   rules:
   - http:
       paths:
