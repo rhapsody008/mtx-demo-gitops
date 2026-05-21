@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cluster-config
+  namespace: project-demo
+data:
+  WEBUI_NAME: "zy-eks"
+  CLUSTER_NAME: "zy-eks"
+  STORAGE_DIR: "/app/server/storage"
+  ENABLE_SIGNUP: "true"
+  DEFAULT_USER_ROLE: "admin"
+  COMMUNITY_HUB_BUNDLE_DOWNLOADS_ENABLED: "1"

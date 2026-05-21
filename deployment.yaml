@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: zy-workload-app
-  namespace: mtx-project-demo
   labels:
     app: zy-workload-app
 spec:
