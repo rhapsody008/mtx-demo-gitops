@@ -6,9 +6,9 @@ metadata:
     traefik.ingress.kubernetes.io/router.tls: "false"
 spec:
   ingressClassName: kommander-traefik
-  host: openwebui.ntnxlab.local
   rules:
-  - http:
+  - host: openwebui.ntnxlab.local
+    http:
       paths:
       - path: /
         pathType: Prefix
