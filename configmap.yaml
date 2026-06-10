@@ -4,8 +4,8 @@ metadata:
   name: cluster-config
   namespace: project-demo
 data:
-  WEBUI_NAME: "zy-eks"
-  CLUSTER_NAME: "zy-eks"
+  WEBUI_NAME: "zy-workload-cluster"
+  CLUSTER_NAME: "zy-workload-cluster"
   STORAGE_DIR: "/app/server/storage"
   ENABLE_SIGNUP: "true"
   DEFAULT_USER_ROLE: "admin"
