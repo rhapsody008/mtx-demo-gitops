@@ -7,8 +7,8 @@ metadata:
 spec:
   ingressClassName: kommander-traefik
   rules:
-  - host: openwebui.ntnxlab.local
-    http:
+#  - host: openwebui.ntnxlab.local
+  - http:
       paths:
       - path: /
         pathType: Prefix
