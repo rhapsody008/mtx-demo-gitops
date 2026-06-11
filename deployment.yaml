@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: mintplexlabs/anythingllm
+          image: harbor.nutanix.sg/mintplexlabs/anythingllm
           ports:
             - name: openwebui
               containerPort: 8080

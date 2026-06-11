@@ -3,12 +3,16 @@ kind: Ingress
 metadata:
   name: zy-workload-app
   annotations:
-    traefik.ingress.kubernetes.io/router.tls: "false"
+    traefik.ingress.kubernetes.io/router.tls: "true"
 spec:
   ingressClassName: kommander-traefik
+  tls:
+    - hosts:
+        - "*.ntnx.local"
+      secretName: ntnx-local-tls  
   rules:
-#  - host: openwebui.ntnxlab.local
-  - http:
+  - host: openwebui.ntnxlab.local
+    http:
       paths:
       - path: /
         pathType: Prefix
