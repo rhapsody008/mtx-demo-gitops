@@ -9,7 +9,7 @@ spec:
   tls:
     - hosts:
         - "*.ntnxlab.local"
-      secretName: local-ca-secret
+      secretName: nutanix-aiuat-local-ca
   rules:
   - host: claims.ntnxlab.local
     http:
