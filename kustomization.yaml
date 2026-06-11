@@ -9,7 +9,6 @@ resources:
 - service.yaml
 - ingress.yaml
 - configmap.yaml
-- secret.yaml
 
 images:
 - name: mintplexlabs/anythingllm
