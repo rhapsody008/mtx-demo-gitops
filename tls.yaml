@@ -1,14 +1,13 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: ntnxlab-local-ca
-  namespace: dnstest
+  name: claims-local-ca
 spec:
   isCA: true
-  commonName: ntnxlab-local-ca
-  secretName: ntnxlab-local-ca-secret
+  commonName: claims-local-ca
+  secretName: claims-local-ca-secret
   dnsNames:
-    - "*.ntnxlab.local"
+    - "*.kgsg.com.sg"
   privateKey:
     algorithm: RSA
     size: 2048
