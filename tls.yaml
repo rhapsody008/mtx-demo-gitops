@@ -1,13 +1,13 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: claims-local-ca
+  name: local-ca
 spec:
   isCA: true
-  commonName: claims-local-ca
-  secretName: claims-local-ca-secret
+  commonName: local-ca
+  secretName: local-ca-secret
   dnsNames:
-    - "*.kgsg.com.sg"
+    - "*.ntnxlab.local"
   privateKey:
     algorithm: RSA
     size: 2048

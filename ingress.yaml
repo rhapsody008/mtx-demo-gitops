@@ -8,10 +8,10 @@ spec:
   ingressClassName: kommander-traefik
   tls:
     - hosts:
-        - "*.kgsg.com.sg"
-      secretName: claims-local-ca-secret
+        - "*.ntnxlab.local"
+      secretName: local-ca-secret
   rules:
-  - host: claims.kgsg.com.sg
+  - host: claims.ntnxlab.local
     http:
       paths:
       - path: /
