@@ -1,0 +1,18 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: ntnxlab-local-ca
+  namespace: dnstest
+spec:
+  isCA: true
+  commonName: ntnxlab-local-ca
+  secretName: ntnxlab-local-ca-secret
+  dnsNames:
+    - "*.ntnxlab.local"
+  privateKey:
+    algorithm: RSA
+    size: 2048
+  issuerRef:
+    name: selfsigned-issuer
+    kind: ClusterIssuer
+    group: cert-manager.io

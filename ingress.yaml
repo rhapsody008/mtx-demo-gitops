@@ -9,7 +9,7 @@ spec:
   tls:
     - hosts:
         - "*.ntnx.local"
-      secretName: ntnx-local-tls  
+      secretName: ntnxlab-local-ca-secret
   rules:
   - host: openwebui.ntnxlab.local
     http:
