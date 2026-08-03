@@ -6,12 +6,12 @@ metadata:
     traefik.ingress.kubernetes.io/router.tls: "true"
 spec:
   ingressClassName: kommander-traefik
-  tls:
-    - hosts:
-        - "*.ntnxlab.local"
-      secretName: nutanix-aiuat-local-ca
+  # tls:
+  #   - hosts:
+  #       - "*.ntnxlab.local"
+  #     secretName: nutanix-aiuat-local-ca
   rules:
-  - host: claims.ntnxlab.local
+  - host: openwebui.ntnxlab.local
     http:
       paths:
       - path: /

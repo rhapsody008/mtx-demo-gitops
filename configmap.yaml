@@ -4,8 +4,8 @@ metadata:
   name: cluster-config
   namespace: project-demo
 data:
-  WEBUI_NAME: "zy-workload-cluster"
-  CLUSTER_NAME: "zy-workload-cluster"
+  WEBUI_NAME: "zy-nkp-mgmt"
+  CLUSTER_NAME: "zy-nkp-mgmt"
   STORAGE_DIR: "/app/server/storage"
   ENABLE_SIGNUP: "true"
   DEFAULT_USER_ROLE: "admin"
